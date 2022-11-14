@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Šachovnice</title>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="background-color: white;">
+    <script>
+        const a = document.body;
+        b = document.createElement('table');
+        for (let i = 0; i < 8; i++) {
+            let c = document.createElement("tr");
+            for (let j = 0; j < 8; j++) {
+                let d = document.createElement("td");
+                d.style.width = '60px';
+                d.style.height = '60px';
+                d.style.border = '5px solid gray';
+                if ((j + i) % 2 == 0) {
+                    d.style.backgroundColor = 'black';
+                }
+                c.appendChild(d);
+            }
+            b.appendChild(c);
+        }
+        a.appendChild(b);
+    </script>
+</body>
+</html>
